@@ -9,6 +9,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex02 - option type", "ex02 
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex03 - records", "ex03 - records\ex03 - records.fsproj", "{1A95ACE3-8E63-4DD1-90D6-EB0D8DAC1937}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex04 - operator overloading", "ex04 - operator overloading\ex04 - operator overloading.fsproj", "{54800D55-0F09-45AA-979D-D80111653C4F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{1A95ACE3-8E63-4DD1-90D6-EB0D8DAC1937}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A95ACE3-8E63-4DD1-90D6-EB0D8DAC1937}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A95ACE3-8E63-4DD1-90D6-EB0D8DAC1937}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54800D55-0F09-45AA-979D-D80111653C4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54800D55-0F09-45AA-979D-D80111653C4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54800D55-0F09-45AA-979D-D80111653C4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54800D55-0F09-45AA-979D-D80111653C4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
