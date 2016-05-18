@@ -7,6 +7,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex01 - hello world", "ex01 
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex02 - variables", "ex02 - variables\ex02 - variables.fsproj", "{47588A3C-2606-41B0-A57D-B36C03EB6BAE}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex03 - functions", "ex03 - functions\ex03 - functions.fsproj", "{F4D4903E-383D-41C6-A315-768A0DDC5065}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{47588A3C-2606-41B0-A57D-B36C03EB6BAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47588A3C-2606-41B0-A57D-B36C03EB6BAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47588A3C-2606-41B0-A57D-B36C03EB6BAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4D4903E-383D-41C6-A315-768A0DDC5065}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4D4903E-383D-41C6-A315-768A0DDC5065}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4D4903E-383D-41C6-A315-768A0DDC5065}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4D4903E-383D-41C6-A315-768A0DDC5065}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
