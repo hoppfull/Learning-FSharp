@@ -17,6 +17,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex06 - forward pipe operato
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex07 - recursion", "ex07 - recursion\ex07 - recursion.fsproj", "{3D80BBD0-F02E-480B-AC80-1DE0C1B96968}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex08 - lists", "ex08 - lists\ex08 - lists.fsproj", "{9674100D-5B98-4054-885D-E9365C4A6FAB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{3D80BBD0-F02E-480B-AC80-1DE0C1B96968}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D80BBD0-F02E-480B-AC80-1DE0C1B96968}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D80BBD0-F02E-480B-AC80-1DE0C1B96968}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9674100D-5B98-4054-885D-E9365C4A6FAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9674100D-5B98-4054-885D-E9365C4A6FAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9674100D-5B98-4054-885D-E9365C4A6FAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9674100D-5B98-4054-885D-E9365C4A6FAB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
