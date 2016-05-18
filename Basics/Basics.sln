@@ -31,6 +31,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex13 - filter map reduce", 
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex14 - tuple", "ex14 - tuple\ex14 - tuple.fsproj", "{9929EB77-60B0-4182-971A-C4D6EAFED8FD}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex15 - pattern matching", "ex15 - pattern matching\ex15 - pattern matching.fsproj", "{54AE46A8-A9A2-4B40-A883-53202BC2492F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{9929EB77-60B0-4182-971A-C4D6EAFED8FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9929EB77-60B0-4182-971A-C4D6EAFED8FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9929EB77-60B0-4182-971A-C4D6EAFED8FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54AE46A8-A9A2-4B40-A883-53202BC2492F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54AE46A8-A9A2-4B40-A883-53202BC2492F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54AE46A8-A9A2-4B40-A883-53202BC2492F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54AE46A8-A9A2-4B40-A883-53202BC2492F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
