@@ -7,6 +7,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex01 - discriminated unions
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex02 - option type", "ex02 - option type\ex02 - option type.fsproj", "{7DBCCE22-C673-4E08-B23D-3E3994F44E00}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex03 - records", "ex03 - records\ex03 - records.fsproj", "{1A95ACE3-8E63-4DD1-90D6-EB0D8DAC1937}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{7DBCCE22-C673-4E08-B23D-3E3994F44E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DBCCE22-C673-4E08-B23D-3E3994F44E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DBCCE22-C673-4E08-B23D-3E3994F44E00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A95ACE3-8E63-4DD1-90D6-EB0D8DAC1937}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A95ACE3-8E63-4DD1-90D6-EB0D8DAC1937}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A95ACE3-8E63-4DD1-90D6-EB0D8DAC1937}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A95ACE3-8E63-4DD1-90D6-EB0D8DAC1937}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
