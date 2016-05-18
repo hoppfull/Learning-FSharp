@@ -9,6 +9,10 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex02 - variables", "ex02 - 
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex03 - functions", "ex03 - functions\ex03 - functions.fsproj", "{F4D4903E-383D-41C6-A315-768A0DDC5065}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex04 - explicit type declaration", "ex04 - explicit type declaration\ex04 - explicit type declaration.fsproj", "{4ED83CE6-4AAF-4987-85BB-70E5AA4CBD61}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex05 - closures and caching", "ex05 - closures and caching\ex05 - closures and caching.fsproj", "{F4BAE89E-C78B-4C31-95DA-926355C49859}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{F4D4903E-383D-41C6-A315-768A0DDC5065}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4D4903E-383D-41C6-A315-768A0DDC5065}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4D4903E-383D-41C6-A315-768A0DDC5065}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ED83CE6-4AAF-4987-85BB-70E5AA4CBD61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ED83CE6-4AAF-4987-85BB-70E5AA4CBD61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ED83CE6-4AAF-4987-85BB-70E5AA4CBD61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ED83CE6-4AAF-4987-85BB-70E5AA4CBD61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4BAE89E-C78B-4C31-95DA-926355C49859}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4BAE89E-C78B-4C31-95DA-926355C49859}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4BAE89E-C78B-4C31-95DA-926355C49859}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4BAE89E-C78B-4C31-95DA-926355C49859}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

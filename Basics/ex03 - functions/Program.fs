@@ -19,3 +19,14 @@ printfn "%i" (F (fun x -> x / 2)) // cmd: 5
 let h a b c = a + b * c
 
 printfn "%i" (h 10 20 30) // cmd: 610
+
+// function composition:
+let fg = f >> g
+let gf = f << g
+
+printfn "%i" (fg 20) // cmd: 39
+printfn "%i" (gf 10) // cmd: 18
+
+// partial application:
+let hc = h 100 2
+printfn "%i" (hc 3) // cmd: 106
