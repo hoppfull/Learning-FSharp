@@ -30,3 +30,11 @@ printfn "%i" (gf 10) // cmd: 18
 // partial application:
 let hc = h 100 2
 printfn "%i" (hc 3) // cmd: 106
+
+// operators are functions:
+let applyOperator op = op 5 7
+
+printfn "%i" (applyOperator (+)) // cmd: 12
+printfn "%i" (applyOperator (-)) // cmd: -2
+printfn "%i" (applyOperator (*)) // cmd: 35
+printfn "%i" (applyOperator (/)) // cmd: 0

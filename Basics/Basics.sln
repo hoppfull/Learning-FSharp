@@ -13,6 +13,10 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex04 - explicit type declar
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex05 - closures and caching", "ex05 - closures and caching\ex05 - closures and caching.fsproj", "{F4BAE89E-C78B-4C31-95DA-926355C49859}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex06 - forward pipe operator", "ex06 - forward pipe operator\ex06 - forward pipe operator.fsproj", "{AEF3730B-F3DA-4777-AEFF-E5DC3449B1AD}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex07 - recursion", "ex07 - recursion\ex07 - recursion.fsproj", "{3D80BBD0-F02E-480B-AC80-1DE0C1B96968}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{F4BAE89E-C78B-4C31-95DA-926355C49859}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4BAE89E-C78B-4C31-95DA-926355C49859}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4BAE89E-C78B-4C31-95DA-926355C49859}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEF3730B-F3DA-4777-AEFF-E5DC3449B1AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEF3730B-F3DA-4777-AEFF-E5DC3449B1AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEF3730B-F3DA-4777-AEFF-E5DC3449B1AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEF3730B-F3DA-4777-AEFF-E5DC3449B1AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D80BBD0-F02E-480B-AC80-1DE0C1B96968}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D80BBD0-F02E-480B-AC80-1DE0C1B96968}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D80BBD0-F02E-480B-AC80-1DE0C1B96968}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D80BBD0-F02E-480B-AC80-1DE0C1B96968}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
