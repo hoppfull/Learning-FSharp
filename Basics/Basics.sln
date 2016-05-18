@@ -25,6 +25,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex10 - sequences", "ex10 - 
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex11 - sets", "ex11 - sets\ex11 - sets.fsproj", "{BB1D8C24-9BE3-42DC-9845-3DA950FB7DDB}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex12 - maps", "ex12 - maps\ex12 - maps.fsproj", "{159155A0-DE78-429E-8A16-1EB8E8F63A34}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{BB1D8C24-9BE3-42DC-9845-3DA950FB7DDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB1D8C24-9BE3-42DC-9845-3DA950FB7DDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB1D8C24-9BE3-42DC-9845-3DA950FB7DDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{159155A0-DE78-429E-8A16-1EB8E8F63A34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{159155A0-DE78-429E-8A16-1EB8E8F63A34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{159155A0-DE78-429E-8A16-1EB8E8F63A34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{159155A0-DE78-429E-8A16-1EB8E8F63A34}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
