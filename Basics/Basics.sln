@@ -21,6 +21,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex08 - lists", "ex08 - list
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex09 - arrays", "ex09 - arrays\ex09 - arrays.fsproj", "{042BB0E9-71DE-4927-8074-5A5E892E5657}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex10 - sequences", "ex10 - sequences\ex10 - sequences.fsproj", "{C6004078-7959-4E7F-8665-37EBDABC9EB5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{042BB0E9-71DE-4927-8074-5A5E892E5657}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{042BB0E9-71DE-4927-8074-5A5E892E5657}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{042BB0E9-71DE-4927-8074-5A5E892E5657}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6004078-7959-4E7F-8665-37EBDABC9EB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6004078-7959-4E7F-8665-37EBDABC9EB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6004078-7959-4E7F-8665-37EBDABC9EB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6004078-7959-4E7F-8665-37EBDABC9EB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
