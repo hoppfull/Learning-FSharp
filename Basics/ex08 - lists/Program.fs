@@ -18,7 +18,7 @@ printfn "%A" ls3 // cmd: [3.14; 99.9; 7.]
 printfn "%A" ls4 // cmd: [0; 1; 2; 3; 4]
 
 // list comprehension:
-printfn "%A" [0..5] // cmd: [0; 1; 2; 3; 5]
+printfn "%A" [0..5] // cmd: [0; 1; 2; 3; 4; 5]
 printfn "%A" [0..2..9] // cmd: [0; 2; 4; 6; 8]
 printfn "%A" [1..2..9] // cmd: [1; 3; 5; 7; 9]
 printfn "%A" [for x in 0..5 do yield x + 10] // cmd: [10; 11; 12; 13; 14; 15]
