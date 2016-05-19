@@ -17,6 +17,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex06 - abstract classes", "
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex07 - interfaces", "ex07 - interfaces\ex07 - interfaces.fsproj", "{1BE7C807-10BF-4A3C-B9B4-7991F3175630}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex08 - object expressions", "ex08 - object expressions\ex08 - object expressions.fsproj", "{B4C32A9B-C163-4A65-B4E4-CCE5CB5AEB20}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{1BE7C807-10BF-4A3C-B9B4-7991F3175630}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1BE7C807-10BF-4A3C-B9B4-7991F3175630}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1BE7C807-10BF-4A3C-B9B4-7991F3175630}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4C32A9B-C163-4A65-B4E4-CCE5CB5AEB20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4C32A9B-C163-4A65-B4E4-CCE5CB5AEB20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4C32A9B-C163-4A65-B4E4-CCE5CB5AEB20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4C32A9B-C163-4A65-B4E4-CCE5CB5AEB20}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
