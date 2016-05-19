@@ -17,6 +17,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex06 - design for correctne
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex07 - async", "ex07 - async\ex07 - async.fsproj", "{62F1D281-261C-40F7-B04D-8FC5E130B49E}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex08 - tasks", "ex08 - tasks\ex08 - tasks.fsproj", "{66DA0B49-4B43-4AA8-98EB-7BC64B9B67BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{62F1D281-261C-40F7-B04D-8FC5E130B49E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62F1D281-261C-40F7-B04D-8FC5E130B49E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62F1D281-261C-40F7-B04D-8FC5E130B49E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66DA0B49-4B43-4AA8-98EB-7BC64B9B67BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66DA0B49-4B43-4AA8-98EB-7BC64B9B67BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66DA0B49-4B43-4AA8-98EB-7BC64B9B67BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66DA0B49-4B43-4AA8-98EB-7BC64B9B67BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
