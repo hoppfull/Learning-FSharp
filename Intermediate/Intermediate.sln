@@ -25,6 +25,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex10 - modules", "ex10 - mo
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex11 - namespaces", "ex11 - namespaces\ex11 - namespaces.fsproj", "{04A736AF-8589-44BC-A330-5380FA8E6B1B}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex12 - type extensions", "ex12 - type extensions\ex12 - type extensions.fsproj", "{3DD5943E-CD69-497A-A6D9-0FC9C680607F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{04A736AF-8589-44BC-A330-5380FA8E6B1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04A736AF-8589-44BC-A330-5380FA8E6B1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04A736AF-8589-44BC-A330-5380FA8E6B1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DD5943E-CD69-497A-A6D9-0FC9C680607F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DD5943E-CD69-497A-A6D9-0FC9C680607F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DD5943E-CD69-497A-A6D9-0FC9C680607F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DD5943E-CD69-497A-A6D9-0FC9C680607F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
