@@ -13,6 +13,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex04 - static members", "ex
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex05 - inheritance", "ex05 - inheritance\ex05 - inheritance.fsproj", "{662607EA-94B9-447D-AE33-68750749F2E8}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex06 - abstract classes", "ex06 - abstract classes\ex06 - abstract classes.fsproj", "{2DCA4287-715B-4FE6-9D7E-F3BD0455FAB2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{662607EA-94B9-447D-AE33-68750749F2E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{662607EA-94B9-447D-AE33-68750749F2E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{662607EA-94B9-447D-AE33-68750749F2E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DCA4287-715B-4FE6-9D7E-F3BD0455FAB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DCA4287-715B-4FE6-9D7E-F3BD0455FAB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DCA4287-715B-4FE6-9D7E-F3BD0455FAB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DCA4287-715B-4FE6-9D7E-F3BD0455FAB2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
