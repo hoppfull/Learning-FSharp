@@ -29,6 +29,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex12 - type extensions", "e
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex13 - module signature files", "ex13 - module signature files\ex13 - module signature files.fsproj", "{76B1C2F1-859E-4F90-AB9F-B9DF9B84DBCF}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex14 - generics", "ex14 - generics\ex14 - generics.fsproj", "{8D6785A5-A046-4224-BE27-BC125B458D34}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{76B1C2F1-859E-4F90-AB9F-B9DF9B84DBCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76B1C2F1-859E-4F90-AB9F-B9DF9B84DBCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76B1C2F1-859E-4F90-AB9F-B9DF9B84DBCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D6785A5-A046-4224-BE27-BC125B458D34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D6785A5-A046-4224-BE27-BC125B458D34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D6785A5-A046-4224-BE27-BC125B458D34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D6785A5-A046-4224-BE27-BC125B458D34}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
