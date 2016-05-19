@@ -13,6 +13,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex04 - operator overloading
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex05 - active patterns", "ex05 - active patterns\ex05 - active patterns.fsproj", "{76DF355D-A68D-4723-B39D-E8F9FF23D932}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex06 - design for correctness", "ex06 - design for correctness\ex06 - design for correctness.fsproj", "{425C5CC2-98A4-4CD5-AB28-16C0113A0C47}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{76DF355D-A68D-4723-B39D-E8F9FF23D932}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76DF355D-A68D-4723-B39D-E8F9FF23D932}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76DF355D-A68D-4723-B39D-E8F9FF23D932}.Release|Any CPU.Build.0 = Release|Any CPU
+		{425C5CC2-98A4-4CD5-AB28-16C0113A0C47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{425C5CC2-98A4-4CD5-AB28-16C0113A0C47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{425C5CC2-98A4-4CD5-AB28-16C0113A0C47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{425C5CC2-98A4-4CD5-AB28-16C0113A0C47}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
