@@ -21,6 +21,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex08 - tasks", "ex08 - task
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex09 - actors", "ex09 - actors\ex09 - actors.fsproj", "{202CEEBE-23BC-43EC-A56E-78D84350911B}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex10 - modules", "ex10 - modules\ex10 - modules.fsproj", "{BC352D74-6957-4307-884B-F7E1D58E8D85}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{202CEEBE-23BC-43EC-A56E-78D84350911B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{202CEEBE-23BC-43EC-A56E-78D84350911B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{202CEEBE-23BC-43EC-A56E-78D84350911B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC352D74-6957-4307-884B-F7E1D58E8D85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC352D74-6957-4307-884B-F7E1D58E8D85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC352D74-6957-4307-884B-F7E1D58E8D85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC352D74-6957-4307-884B-F7E1D58E8D85}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
