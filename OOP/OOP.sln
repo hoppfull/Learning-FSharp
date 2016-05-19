@@ -9,6 +9,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex02 - properties", "ex02 -
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex03 - secondary constructors", "ex03 - secondary constructors\ex03 - secondary constructors.fsproj", "{91370711-0BF7-4943-AF3D-AC7450B39E6F}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex04 - static members", "ex04 - static members\ex04 - static members.fsproj", "{B0B4CCA7-7E46-49D3-B45F-1E88B9ACE8AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{91370711-0BF7-4943-AF3D-AC7450B39E6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91370711-0BF7-4943-AF3D-AC7450B39E6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91370711-0BF7-4943-AF3D-AC7450B39E6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0B4CCA7-7E46-49D3-B45F-1E88B9ACE8AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0B4CCA7-7E46-49D3-B45F-1E88B9ACE8AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0B4CCA7-7E46-49D3-B45F-1E88B9ACE8AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0B4CCA7-7E46-49D3-B45F-1E88B9ACE8AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
