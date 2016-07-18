@@ -10,10 +10,25 @@ let outputFile file =
     | true  -> Some (File.ReadAllText file)
     | false -> None
 
-let getFile file contentType res (req:HttpListenerRequest) =
-    match outputFile file, req.HttpMethod with
-    | Some txt, "GET" -> respond res (Some {
+let getFile file contentType =
+    match outputFile file with
+    | Some txt      -> respond (Some {
         code            = HttpStatusCode.OK
         contentType     = contentType
         content         = txt })
-    | _, _            -> respond res None
+    | None          -> respond None
+
+open Newtonsoft.Json.Linq
+open Newtonsoft.Json.Schema
+open Newtonsoft.Json.Schema.Generation
+
+let schemaGenerator = new JSchemaGenerator()
+
+let TryJsonConvert<'t> schema s =
+    try let obj = JObject.Parse s
+        if obj.IsValid schema then Some (obj.ToObject<'t>()) else None
+    with _ -> None
+
+let readStream (stream:Stream) =
+    let reader = new StreamReader(stream)
+    reader.ReadToEnd()
