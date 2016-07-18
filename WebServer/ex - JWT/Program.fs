@@ -11,3 +11,5 @@ printfn "%s" token
 let json = JsonWebToken.Decode(token, key)
 
 printfn "%s" json
+
+printfn "%s" <| try JsonWebToken.Decode("nonsensestring", key) with _ -> "failed"
