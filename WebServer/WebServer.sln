@@ -11,6 +11,10 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex03 - json ajax requests",
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex - Newtonsoft.Json", "ex - Newtonsoft.Json\ex - Newtonsoft.Json.fsproj", "{9A7A8B51-42BE-420A-AA89-4335388F4E2F}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex04 - json web token", "ex04 - json web token\ex04 - json web token.fsproj", "{27445069-644F-4030-995C-F2677372F1AE}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex - JWT", "ex - JWT\ex - JWT.fsproj", "{1F44C31F-87B8-4633-928C-4EB7A88CBFB5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{9A7A8B51-42BE-420A-AA89-4335388F4E2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A7A8B51-42BE-420A-AA89-4335388F4E2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A7A8B51-42BE-420A-AA89-4335388F4E2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27445069-644F-4030-995C-F2677372F1AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27445069-644F-4030-995C-F2677372F1AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27445069-644F-4030-995C-F2677372F1AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27445069-644F-4030-995C-F2677372F1AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F44C31F-87B8-4633-928C-4EB7A88CBFB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F44C31F-87B8-4633-928C-4EB7A88CBFB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F44C31F-87B8-4633-928C-4EB7A88CBFB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F44C31F-87B8-4633-928C-4EB7A88CBFB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
