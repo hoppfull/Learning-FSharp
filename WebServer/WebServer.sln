@@ -15,6 +15,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex04 - json web token", "ex
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex - JWT", "ex - JWT\ex - JWT.fsproj", "{1F44C31F-87B8-4633-928C-4EB7A88CBFB5}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex05 - url piggyback data", "ex05 - url piggyback data\ex05 - url piggyback data.fsproj", "{CBA25677-9A37-4018-B0B8-5531D61A3DDD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{1F44C31F-87B8-4633-928C-4EB7A88CBFB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F44C31F-87B8-4633-928C-4EB7A88CBFB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F44C31F-87B8-4633-928C-4EB7A88CBFB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBA25677-9A37-4018-B0B8-5531D61A3DDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBA25677-9A37-4018-B0B8-5531D61A3DDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBA25677-9A37-4018-B0B8-5531D61A3DDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBA25677-9A37-4018-B0B8-5531D61A3DDD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
