@@ -47,3 +47,24 @@ function BalanceRequest(session) {
     req.send(JSON.stringify(session))
     console.log("Sent http request. Waiting for response...")
 }
+
+function NameRequest(session) {
+    const req = new XMLHttpRequest()
+    req.onreadystatechange = () => {
+        if (req.readyState === 4) {
+            switch (req.status) {
+                case 200:
+                    console.log("Http request successful!")
+                    console.log(req.responseText)
+                    break
+                default:
+                    console.log(req.responseText)
+            }
+        }
+    }
+
+    req.open('POST', "name", true)
+    req.setRequestHeader('Content-Type', 'application/json;charset=utf-8')
+    req.send(JSON.stringify(session))
+    console.log("Sent http request. Waiting for response...")
+}

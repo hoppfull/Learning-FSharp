@@ -10,7 +10,8 @@ let PRIVATE_KEY = "mykey"
 type User = { name:string; pw:string }
 let UserSchema = schemaGenerator.Generate typeof<User>
 
-type Balance = { name:string; balance:int }
+type AccountBalance = { balance:int }
+type AccountName = { name:string }
 
 type Session = { token:string }
 let SessionSchema = schemaGenerator.Generate typeof<Session>
@@ -19,54 +20,63 @@ type Account = { user:User; balance:int }
 let accounts = [ { user={ name="Huey";  pw="abc" }; balance=0 };
                  { user={ name="Dewey"; pw="xyz" }; balance=5 };
                  { user={ name="Louie"; pw="uvw" }; balance=8 } ]
+let tryFindAccount user =
+    List.tryFind (fun account -> account.user = user) accounts
 
-let login:RequestHandler = fun res req ->
-    let body = readStream req.InputStream
-    (match tryJsonConvert<User> UserSchema body with
-    | Some user ->
-        match List.tryFind (fun a -> a.user = user) accounts with
-        | Some account ->
-            let token = JsonWebToken.Encode(user, PRIVATE_KEY, JwtHashAlgorithm.HS256)
-            let jsonData = jsonStringify { token=token }
-            respond (Some { code=HttpStatusCode.OK;
-                            contentType=HttpContentType.JSON;
-                            content=jsonData })
-        | None ->
-            respond (Some { code=HttpStatusCode.Unauthorized;
-                            contentType=HttpContentType.Plain;
-                            content="Invalid login credentials" })
-    | None ->
-        respond (Some { code=HttpStatusCode.BadRequest;
-                        contentType=HttpContentType.Plain;
-                        content="Bad request data format" })
-    ) res req
+let jwtEncode<'t> record = JsonWebToken.Encode(record, PRIVATE_KEY, JwtHashAlgorithm.HS256)
 
-let getBalance:RequestHandler = fun res req ->
-    let body = readStream req.InputStream
-    (match tryJsonConvert<Session> SessionSchema body with
-    | Some session -> match tryDecodeJWT<User> UserSchema PRIVATE_KEY session.token with
-                      | Some user -> match List.tryFind (fun a -> a.user = user) accounts with
-                                     | Some account -> let jsonData = jsonStringify { name=account.user.name; balance=account.balance }
-                                                       respond (Some { code=HttpStatusCode.OK;
-                                                                       contentType=HttpContentType.JSON
-                                                                       content=jsonData })
-                                     | None -> respond (Some { code=HttpStatusCode.NotFound;
-                                                               contentType=HttpContentType.Plain;
-                                                               content="Error: User not found!" })
-                      | None -> respond (Some { code=HttpStatusCode.BadRequest;
-                                                contentType=HttpContentType.Plain;
-                                                content="Bad request data format" })
-    | None -> respond (Some { code=HttpStatusCode.BadRequest;
-                              contentType=HttpContentType.Plain;
-                              content="Bad request data format" })
-    ) res req
+let okRequest = { code=HttpStatusCode.OK;
+                  contentType=HttpContentType.JSON;
+                  content="" }
 
-let route url mthd =
+let badRequest = { code=HttpStatusCode.BadRequest;
+                   contentType=HttpContentType.Plain;
+                   content="" }
+
+type handler = string -> ResponseData option
+
+let handle (h:handler):RequestHandler = fun res req ->
+    (readStream req.InputStream |> h |> respond) res req
+
+let login data =
+    match tryJsonConvert<User> UserSchema data with
+    | Some user -> match tryFindAccount user with
+                   | Some account -> { okRequest with content=jsonStringify { token=jwtEncode user } }
+                   | None         -> { badRequest with content="Invalid login credentials" }
+    | None      -> { badRequest with content="Bad request data format" }
+    |> Some
+
+
+let decodeSessionCredentials data =
+    match tryJsonConvert<Session> SessionSchema data with
+    | Some session -> tryDecodeJWT<User> UserSchema PRIVATE_KEY session.token
+    | None -> None
+
+let decodeSessionAccount data =
+    match decodeSessionCredentials data with
+    | Some user -> tryFindAccount user
+    | None      -> None
+
+let okResponseDataWithJson record =
+    Some { okRequest with content=jsonStringify record }
+
+let getBalance data =
+    match decodeSessionAccount data with
+    | Some account -> okResponseDataWithJson { AccountBalance.balance=account.balance }
+    | None         -> None
+
+let getName data =
+    match decodeSessionAccount data with
+    | Some account -> okResponseDataWithJson { AccountName.name=account.user.name }
+    | None         -> None
+
+let route url mthd = 
     match mthd, url with
     | GET, "/"          -> getFile "index.html" HTML
     | GET, "/main.js"   -> getFile "main.js" Javascript
-    | POST, "/login"    -> login
-    | POST, "/balance"  -> getBalance
+    | POST, "/login"    -> handle login
+    | POST, "/balance"  -> handle getBalance
+    | POST, "/name"     -> handle getName
     | _, _              -> respond None
 
 [<EntryPoint>]
