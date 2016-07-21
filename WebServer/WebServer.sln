@@ -17,6 +17,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex - JWT", "ex - JWT\ex - J
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex05 - url piggyback data", "ex05 - url piggyback data\ex05 - url piggyback data.fsproj", "{CBA25677-9A37-4018-B0B8-5531D61A3DDD}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ex - LINQ to SQL", "ex - LINQ to SQL\ex - LINQ to SQL.fsproj", "{37903EAE-D691-4685-BE93-96D01D3BCC57}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{CBA25677-9A37-4018-B0B8-5531D61A3DDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBA25677-9A37-4018-B0B8-5531D61A3DDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBA25677-9A37-4018-B0B8-5531D61A3DDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37903EAE-D691-4685-BE93-96D01D3BCC57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37903EAE-D691-4685-BE93-96D01D3BCC57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37903EAE-D691-4685-BE93-96D01D3BCC57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37903EAE-D691-4685-BE93-96D01D3BCC57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
