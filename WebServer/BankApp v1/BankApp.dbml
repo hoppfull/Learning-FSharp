@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BankApp" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="dbo.Accounts" Member="Accounts">
+    <Type Name="Account">
+      <Column Name="ID" Type="System.Int32"
+              DbType="INT IDENTITY NOT NULL"
+              IsPrimaryKey="true" IsDbGenerated="true"
+              CanBeNull="false" />
+      
+      <Column Name="Username" Type="System.String"
+              DbType="VARCHAR(50) NOT NULL"
+              CanBeNull="false" />
+      
+      <Column Name="Password" Type="System.String"
+              DbType="VARCHAR(50) NOT NULL"
+              CanBeNull="false" />
+      
+      <Column Name="Balance" Type="System.Int32"
+              DbType="INT NOT NULL"
+              CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

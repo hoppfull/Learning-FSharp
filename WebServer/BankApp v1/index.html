@@ -1,0 +1,92 @@
+﻿<!doctype html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>BankApp</title>
+    <meta charset="utf-8" />
+
+    <script src="main.js" defer></script>
+    <script src="serverAccess.js"></script>
+    <script src="validation.js"></script>
+    <link href="main.css" rel="stylesheet" async />
+</head>
+<body class="centered">
+    <input id="btn_logout" class="button" type="button" value="Logout" />
+    <h1>BankApp</h1>
+    <content id="scr_login" class="screens" style="display: initial;">
+        <h2>Login</h2>
+        <table class="bordered centered">
+            <tr>
+                <td class="labels">Username:</td>
+                <td><input id="ibx_loginUsername" class="inputBox" type="text" pattern="" /></td>
+            </tr>
+            <tr>
+                <td class="labels">Password:</td>
+                <td><input id="ibx_loginPassword" class="inputBox" type="password" /></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p id="msg_login" class="serverMessages"></p>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2">
+                    <input id="btn_login" class="button" type="button" value="Login" />
+                    <input id="btn_navRegister" class="button" type="button" value="Register" />
+                </td>
+            </tr>
+        </table>
+    </content>
+
+    <content id="scr_register" class="screens">
+        <h2>Register</h2>
+        <table class="bordered centered">
+            <tr>
+                <td class="labels">Username:</td>
+                <td><input id="ibx_registerUsername" class="inputBox" type="text" /></td>
+            </tr>
+            <tr>
+                <td class="labels">Password:</td>
+                <td><input id="ibx_registerPassword" class="inputBox" type="password" /></td>
+            </tr>
+            <tr>
+                <td class="labels">Confirm password:</td>
+                <td><input id="ibx_registerConfirmPassword" class="inputBox" type="password" /></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p id="msg_register" class="serverMessages"></p>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2">
+                    <input id="btn_register" class="button" type="button" value="Register" />
+                    <input id="btn_navLogin" class="button" type="button" value="Cancel" />
+                </td>
+            </tr>
+        </table>
+    </content>
+
+    <content id="scr_account" class="screens">
+        <h2>Account: <span id="lbl_accountTitleName"></span></h2>
+        <table class="bordered centered">
+            <tr>
+                <td colspan="2"><h3>Balance: <span id="lbl_balance"></span></h3></td>
+            </tr>
+            <tr>
+                <td><input id="btn_deposit" class="button" type="button" value="Deposit" /></td>
+                <td><input id="ibx_depositAmount" class="inputBox" type="number" /></td>
+            </tr>
+            <tr>
+                <td><input id="btn_withdraw" class="button" type="button" value="Withdraw" /></td>
+                <td><input id="ibx_withdrawAmount" class="inputBox" type="number" /></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p id="msg_account" class="serverMessages"></p>
+                </td>
+            </tr>
+        </table>
+    </content>
+</body>
+</html>
