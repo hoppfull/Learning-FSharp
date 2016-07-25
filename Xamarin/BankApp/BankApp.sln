@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankApp(Android)", "BankApp(Android)\BankApp(Android).csproj", "{96DC70B4-1A80-4AC8-8228-A0D394B09620}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "BankApp.Kernel", "BankApp.Kernel\BankApp.Kernel.fsproj", "{A9BC8921-E739-4E9C-86B0-0B63FF89AFDE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96DC70B4-1A80-4AC8-8228-A0D394B09620}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96DC70B4-1A80-4AC8-8228-A0D394B09620}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96DC70B4-1A80-4AC8-8228-A0D394B09620}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{96DC70B4-1A80-4AC8-8228-A0D394B09620}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96DC70B4-1A80-4AC8-8228-A0D394B09620}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96DC70B4-1A80-4AC8-8228-A0D394B09620}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A9BC8921-E739-4E9C-86B0-0B63FF89AFDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9BC8921-E739-4E9C-86B0-0B63FF89AFDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9BC8921-E739-4E9C-86B0-0B63FF89AFDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9BC8921-E739-4E9C-86B0-0B63FF89AFDE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
