@@ -5,7 +5,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
-using BankApp.Kernel;
+using BankApp.Nucleus;
 using Microsoft.FSharp.Core;
 
 namespace BankApp {

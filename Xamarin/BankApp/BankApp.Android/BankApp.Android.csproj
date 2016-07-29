@@ -78,9 +78,9 @@
     <Folder Include="Assets\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BankApp.Kernel\BankApp.Kernel.fsproj">
+    <ProjectReference Include="..\BankApp.Kernel\BankApp.Nucleus.fsproj">
       <Project>{a9bc8921-e739-4e9c-86b0-0b63ff89afde}</Project>
-      <Name>BankApp.Kernel</Name>
+      <Name>BankApp.Nucleus</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

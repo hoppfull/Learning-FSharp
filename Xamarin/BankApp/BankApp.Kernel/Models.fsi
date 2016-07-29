@@ -1,4 +1,4 @@
-﻿namespace BankApp.Kernel
+﻿namespace BankApp.Nucleus
 
 module Models =
     type Credentials = { Username:string; Password:string }

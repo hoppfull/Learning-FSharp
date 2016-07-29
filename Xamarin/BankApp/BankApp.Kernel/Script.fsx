@@ -2,7 +2,7 @@
 #load "Models.fs"
 #load "DataAccessLayer.fs"
 #load "AppLogic.fs"
-open BankApp.Kernel
+open BankApp.Nucleus
 
 DataAccessLayer.userAccounts <- [
     { User={ Username="Tripp"; Password="abc" }; Data={ Balance=0 } }

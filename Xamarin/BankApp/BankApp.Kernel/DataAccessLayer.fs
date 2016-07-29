@@ -1,4 +1,4 @@
-﻿namespace BankApp.Kernel
+﻿namespace BankApp.Nucleus
 
 module DataAccessLayer =
     let NullCheck<'t> (result:'t) =

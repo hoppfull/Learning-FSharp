@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "BankApp.Kernel", "BankApp.Kernel\BankApp.Kernel.fsproj", "{A9BC8921-E739-4E9C-86B0-0B63FF89AFDE}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "BankApp.Nucleus", "BankApp.Kernel\BankApp.Nucleus.fsproj", "{A9BC8921-E739-4E9C-86B0-0B63FF89AFDE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankApp.Android", "BankApp.Android\BankApp.Android.csproj", "{96DC70B4-1A80-4AC8-8228-A0D394B09620}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankApp.IPhone", "BankApp\BankApp.IPhone.csproj", "{D6CFC4BD-E391-4C3A-BE7B-8F3E5C935BB8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankApp.IPhone", "BankApp.IPhone\BankApp.IPhone.csproj", "{D6CFC4BD-E391-4C3A-BE7B-8F3E5C935BB8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

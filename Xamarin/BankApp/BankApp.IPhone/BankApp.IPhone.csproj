@@ -100,5 +100,11 @@
   <ItemGroup>
     <Content Include="Entitlements.plist" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BankApp.Kernel\BankApp.Nucleus.fsproj">
+      <Project>{a9bc8921-e739-4e9c-86b0-0b63ff89afde}</Project>
+      <Name>BankApp.Nucleus</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

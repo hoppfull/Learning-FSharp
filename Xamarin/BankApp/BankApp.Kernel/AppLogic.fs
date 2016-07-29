@@ -1,4 +1,4 @@
-﻿namespace BankApp.Kernel
+﻿namespace BankApp.Nucleus
 
 module AppLogic =
     type LoginOptions () = class end

@@ -1,4 +1,4 @@
-﻿namespace BankApp.Kernel
+﻿namespace BankApp.Nucleus
 
 module private DataAccessLayer =
     open System.Collections.Generic
