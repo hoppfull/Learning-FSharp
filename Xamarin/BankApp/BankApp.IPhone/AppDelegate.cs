@@ -1,6 +1,8 @@
 ﻿using Foundation;
 using UIKit;
 
+using BankApp.Nucleus;
+
 namespace BankApp {
     // The UIApplicationDelegate for the application. This class is responsible for launching the
     // User Interface of the application, as well as listening (and optionally responding) to application events from iOS.
@@ -20,6 +22,10 @@ namespace BankApp {
             // If you have defined a root view controller, set it here:
             // Window.RootViewController = myViewController;
 
+            var loginState = new AppLogic.LoginOptions();
+            var loginScreen = new ViewControllers.LoginScreen(loginState);
+
+            Window.RootViewController = new UINavigationController(loginScreen);
             // make the window visible
             Window.MakeKeyAndVisible();
 

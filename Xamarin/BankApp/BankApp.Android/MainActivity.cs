@@ -6,17 +6,13 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using BankApp.Nucleus;
-using Microsoft.FSharp.Core;
 
 namespace BankApp {
     [Activity(MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity {
-        public int Count { get; private set; }
         protected override void OnCreate(Bundle bundle) {
             base.OnCreate(bundle);
-            // Kan inte tilldela eventhanterare för element som inte är instansierade! Orsakar krash.
             NavigateToLogin(new AppLogic.LoginOptions());
-
         }
 
         private void ShowMessage(string title, string msg) {
@@ -25,16 +21,6 @@ namespace BankApp {
                 .SetTitle(title)
                 .SetMessage(msg)
                 .Show();
-        }
-
-        private void MatchOption<T>(FSharpOption<T> option, Action<T> onSuccess, Action onFailure) {
-            bool success = FSharpOption<T>.get_IsSome(option);
-            if (success) {
-                onSuccess(option.Value);
-            }
-            else {
-                onFailure();
-            }
         }
 
         private void NavigateToLogin(AppLogic.LoginOptions state) {
@@ -47,10 +33,10 @@ namespace BankApp {
             TextView tbx_LoginPasswordInput = FindViewById<TextView>(Resource.Id.tbx_LoginPasswordInput);
             
             btn_LoginNavRegister.Click += (o, e) => NavigateToRegister(state.NavRegister());
-
+            
             btn_LoginApply.Click += (o, e) => {
                 var accountOption = state.Login(new Models.Credentials(tbx_LoginUsernameInput.Text, tbx_LoginPasswordInput.Text));
-                MatchOption(accountOption, NavigateToAccount, () => {
+                Helper.MatchOption(accountOption, NavigateToAccount, () => {
                     tbx_LoginPasswordInput.Text = string.Empty;
                     ShowMessage("LoginError!", "Could not login!");
                 });
@@ -70,7 +56,7 @@ namespace BankApp {
 
             btn_RegisterApply.Click += (o, e) => {
                 var loginOption = state.Register(new Models.Credentials(tbx_RegisterUsernameInput.Text, tbx_RegisterPasswordInput.Text));
-                MatchOption(loginOption, loginState => {
+                Helper.MatchOption(loginOption, loginState => {
                     NavigateToLogin(loginState);
                     ShowMessage("Congratulations!", "You are registered!");
                 }, () => {
@@ -100,7 +86,7 @@ namespace BankApp {
             btn_AccountDeposit.Click += (o, e) => {
                 try {
                     var accountOption = state.Deposit(int.Parse(tbx_AccountDepositInput.Text));
-                    MatchOption(accountOption, account => {
+                    Helper.MatchOption(accountOption, account => {
                         lbl_AccountBalance.Text = $"{account.Balance}:- SEK";
                         ShowMessage("Deposit successful!", $"Deposited {tbx_AccountDepositInput.Text}:- SEK!");
                     }, () => {
@@ -115,7 +101,7 @@ namespace BankApp {
             btn_AccountWithdraw.Click += (o, e) => {
                 try {
                     var accountOption = state.Withdraw(int.Parse(tbx_AccountWithdrawInput.Text));
-                    MatchOption(accountOption, account => {
+                    Helper.MatchOption(accountOption, account => {
                         lbl_AccountBalance.Text = $"{account.Balance}:- SEK";
                         ShowMessage("Withdraw successful!", $"Withdrew {tbx_AccountWithdrawInput.Text}:- SEK!");
                     }, () => {

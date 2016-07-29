@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>BankApp</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>BankApp</AssemblyName>
+    <AssemblyName>BankAppIPhone</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -84,14 +84,37 @@
     <CodesignKey>iPhone Distribution</CodesignKey>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ApiAbstractions.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="ViewControllers\AccountScreen.cs" />
+    <Compile Include="ViewControllers\AccountScreen.designer.cs">
+      <DependentUpon>AccountScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\LoginScreen.cs" />
+    <Compile Include="ViewControllers\LoginScreen.designer.cs">
+      <DependentUpon>LoginScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\RegisterScreen.cs" />
+    <Compile Include="ViewControllers\RegisterScreen.designer.cs">
+      <DependentUpon>RegisterScreen.cs</DependentUpon>
+    </Compile>
     <None Include="GettingStarted.Xamarin" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
+    <InterfaceDefinition Include="ViewControllers\LoginScreen.xib">
+      <SubType>Designer</SubType>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="ViewControllers\RegisterScreen.xib">
+      <SubType>Designer</SubType>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="ViewControllers\AccountScreen.xib">
+      <SubType>Designer</SubType>
+    </InterfaceDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="FSharp.Core" />
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -106,5 +129,6 @@
       <Name>BankApp.Nucleus</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
